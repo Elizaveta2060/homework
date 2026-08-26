@@ -1,0 +1,55 @@
+form {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #8f939a;
+  background-color: #8f939a;
+  border-radius: 15px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #f1d2df;
+  background-color: #f1d2df;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+  max-height: 150px;
+}
+
+label {
+  display: block;
+}
+
+.approval-label {
+  display: inline;
+  cursor: pointer;
+}
+
+#approval {
+  width: auto;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: #f1d2df;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Marggraff";
+  src:
+    local("Marggraff"),
+    url("./fonts/Marggraff.ttf") format("ttf");
+}
+
+body {
+  font-family: "Marggraff", sans-serif;
+}

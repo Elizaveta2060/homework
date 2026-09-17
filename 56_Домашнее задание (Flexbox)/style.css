@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: local("Ubuntu-Regular"), url(./fonts/Ubuntu-Regular.woff2);
+}
+
+body* {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 84px;
+  height: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+p {
+  font-family: Ubuntu-Regular, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin: 0px;
+}
+
+.connect {
+  width: 260px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info {
+  font-family: Ubuntu-Regular, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  text-transform: uppercase;
+  color: #858e8a;
+}
+
+.phone {
+  font-family: Ubuntu-Regular, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+  text-decoration: underline;
+  text-align: right;
+  text-decoration: none;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1220px;
+  height: 105px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}

@@ -53,7 +53,18 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  transition: opacity 0.85s;
+  transition:
+    opacity 0.85s,
+    background-color 0.2s;
+}
+
+.button:active {
+  background-color: #2568a3;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: default;
 }
 
 .button:hover {
@@ -82,4 +93,28 @@ a {
   text-align: right;
   text-transform: uppercase;
   color: #858e8a;
+}
+
+a,
+button {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible summary:focus-visible {
+  outline: 2px solid #3596ed;
+  outline-offset: 1px;
+}
+
+a:active {
+  color: #2568a3;
+}
+
+.title-medium {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
 }

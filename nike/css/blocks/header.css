@@ -1,0 +1,152 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 30px;
+  padding-bottom: 32px;
+  background-color: var(--bg-color);
+}
+
+.header--fixed {
+  box-shadow: 0 0 28px 0 var(--shadow-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: clamp(25px, -11.21rem + 21.21vw, 120px);
+}
+
+@media (width > 768px) {
+  .header__menu {
+    flex-grow: 1;
+  }
+}
+
+@media (width <=768px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.header_controls {
+  display: flex;
+  align-items: center;
+}
+
+@media (width > 992px) {
+  .header_controls {
+    gap: 60px;
+  }
+}
+
+@media (width <= 992px) {
+  .header_controls {
+    gap: 30px;
+  }
+}
+
+.header_order {
+  position: relative;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  color: #ffea00;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+@media (any-hover: hover) {
+  .header_order:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.header_order::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 90%;
+  min-height: 11px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-time) visibility var(--transition-time);
+}
+
+.header__actions {
+  display: flex;
+  gap: 20px;
+}
+
+@media (width >768px) {
+  .header__actions {
+    gap: 20px;
+  }
+}
+
+@media (width<=768px) {
+  .header__actions {
+    gap: 30px;
+  }
+}
+
+.header__button-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--main-color);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .header__button-actions:hover {
+    color: var(--accent-color);
+  }
+}
+
+.header__button-actions:active {
+  color: var(--accent-color);
+}
+
+.header__actions-icons {
+  stroke: currentColor;
+}
+
+@media (width <=768px) {
+  .burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  .burger__icon-menu,
+  .burger--open .burger__icon-cross {
+    display: block;
+  }
+  .burger__icon-cross,
+  .burger--open .burger__icon-menu {
+    display: none;
+  }
+}
+
+@media (width> 768px) {
+  .burger {
+    display: none;
+  }
+}
